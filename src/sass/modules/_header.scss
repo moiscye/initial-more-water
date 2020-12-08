@@ -1,0 +1,46 @@
+.header {
+  grid-column: full-start / full-end;
+  padding: 8rem;
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  align-content: center;
+
+  &__heading {
+    grid-column: 5 / 12;
+    grid-row: 4;
+  }
+
+  &__text {
+    grid-column: 5 /12;
+    grid-row: 6;
+  }
+
+  &__btn {
+    grid-column: 5 /9;
+    grid-row: 9;
+    align-self: flex-start;
+  }
+  &__icon {
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
+    grid-column: 4 /5;
+    grid-row: 4;
+    fill: $color-blue-dark-1;
+  }
+  &__img {
+    width: 80rem;
+    grid-column: 12/-1;
+    grid-row: 3/-1;
+  }
+  &__arrow {
+    margin-left: 2rem;
+    grid-column: 12/13;
+    grid-row: 5/-1;
+    fill: $color-green-light-1;
+    width: 12rem;
+    height: 12rem;
+  }
+}

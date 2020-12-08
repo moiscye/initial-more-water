@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+
+$color-secondary: #00263e;
+$color-blue-light-1: #e5f6fb;
+$color-blue-dark-1: #b9d9eb;
+
+$color-green-light-1: #cedc00;
+$color-green-light-2: #93e3c0;
+// FONT VARIABLES
+$font-primary: "Flama Light";
+$font-display: "Gravur Condensed";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 60vh 20vh;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+}

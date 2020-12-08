@@ -1,0 +1,70 @@
+.footer {
+  grid-column: full-start / full-end;
+  padding: 10rem;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 2fr) 1fr;
+  grid-template-rows: 1fr 3rem;
+  &-navigation {
+    display: flex;
+    flex-direction: column;
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+      padding: 1rem 0;
+      font-size: 1.8rem;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+  }
+  &--left {
+    grid-column: 2/3;
+  }
+
+  &--center {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__link {
+      text-decoration: none;
+      color: $color-secondary;
+      color: #fff;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  }
+
+  &--right {
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    &__text-container {
+      max-width: 90%;
+      text-align: justify;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    :not(:last-child) {
+      margin-right: 2rem;
+    }
+    &__icon {
+      fill: #fff;
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3rem;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    &--text {
+      padding-top: 3rem;
+    }
+  }
+}
