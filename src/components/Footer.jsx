@@ -12,19 +12,19 @@ const Footer = () => {
         </h3>
 
         <p className="footer-navigation">
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             Inicio
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             Nosotros
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             Cotizaciones
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             Galeria
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             Contacto
           </a>
         </p>
@@ -78,13 +78,13 @@ const Footer = () => {
         </div>
 
         <div className="footer__icons">
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             <FacebookSvg className="footer__icons__icon" />
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             <TwitterSvg className="footer__icons__icon" />
           </a>
-          <a className="footer-navigation__link" href="#">
+          <a className="footer-navigation__link" href="/">
             <InstagramSvg className="footer__icons__icon" />
           </a>
         </div>

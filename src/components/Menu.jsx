@@ -17,22 +17,22 @@ const Menu = () => {
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#" className="navigation__link">
+          <a href="/" className="navigation__link">
             Nosotros
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#" className="navigation__link">
+          <a href="/" className="navigation__link">
             Cotizaciones
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#" className="navigation__link">
+          <a href="/" className="navigation__link">
             Galeria
           </a>
         </li>
         <li className="navigation__item">
-          <a href="#" className="navigation__link">
+          <a href="/" className="navigation__link">
             Contacto
           </a>
         </li>
