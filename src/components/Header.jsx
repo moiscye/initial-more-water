@@ -11,7 +11,7 @@ const Header = () => {
       </h1>
       <h3 className="header__text text-primary">
         En <strong>Angelopolis</strong> contamos con agua de la mejor calidad,
-        servicio inigualable y precio que ayuda a tu economia{" "}
+        servicio inigualable y precio que ayuda a tu economia.
       </h3>
       <button className="btn btn--large header__btn">
         Ordena tu pipa aqui

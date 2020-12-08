@@ -1,12 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   font-size: 1.6rem;
-  font-family: $font-primary;
   font-weight: 300;
   color: $color-secondary;
   line-height: 1.6;
@@ -38,7 +31,7 @@ body {
     color: $color-secondary;
     font-weight: 400;
     font-size: 2.5rem;
-    font-family: "Gravur Condensed";
+    //font-family: "Gravur Condensed";
     &--footer {
       color: #fff;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
