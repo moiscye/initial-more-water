@@ -1,12 +1,10 @@
 import React from "react";
-// import { ReactComponent as Drop } from "../img/SVG/droplet.svg";
 
 import image1 from "../img/pipa-logo-2.png";
 const Header = () => {
   return (
     <>
       <div id="header" className="header">
-        {/* <Drop className="header__icon" /> */}
         <div className="header__container">
           <h1 className="header__heading heading-primary">
             Necesitas una pipa de Agua?
