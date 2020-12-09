@@ -1,29 +1,40 @@
-@define-mixin atTiny {
-  @media (min-width: 400px) {
-    @mixin-content;
+@mixin atMicro {
+  @media (min-width: 320px) {
+    @content;
   }
 }
 
-@define-mixin atSmall {
-  @media (min-width: 530px) {
-    @mixin-content;
+@mixin atTiny {
+  @media (min-width: 375px) {
+    @content;
   }
 }
 
-@define-mixin atMedium {
-  @media (min-width: 800px) {
-    @mixin-content;
+@mixin atSmall {
+  @media (min-width: 425px) {
+    @content;
   }
 }
 
-@define-mixin atLarge {
-  @media (min-width: 1200px) {
-    @mixin-content;
+@mixin atMedium {
+  @media (min-width: 768px) {
+    @content;
   }
 }
 
-@define-mixin atLargest {
+@mixin atLarge {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin atLargest {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin atWideScreen {
   @media (min-width: 1800px) {
-    @mixin-content;
+    @content;
   }
 }

@@ -1,48 +1,68 @@
 body {
+  overflow-x: hidden;
   font-size: 1.6rem;
   font-weight: 300;
   color: $color-secondary;
   line-height: 1.6;
+  font-family: $font-display;
 
   .heading-primary {
     color: $color-secondary;
     text-transform: none;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
-    font-family: "Gravur Condensed";
+    font-family: $font-display;
     line-height: 1.08;
+    @include atMedium {
+      font-size: 4.5rem;
+      color: $color-secondary;
+    }
   }
   .heading-secondary {
     color: $color-secondary;
     text-transform: none;
     font-size: 2.5rem;
-    font-weight: 400;
-    font-family: "Gravur Condensed";
+    font-weight: 300;
+    font-family: $font-display;
     line-height: 1.08;
 
     &--footer {
       color: #fff;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 2.2rem;
+      text-align: center;
+      @include atMedium {
+        text-align: justify;
+      }
     }
   }
 
   .text-primary {
     color: $color-secondary;
-    font-weight: 400;
-    font-size: 2.5rem;
-    //font-family: "Gravur Condensed";
+    font-weight: 300;
+    font-size: 1.9rem;
+    font-family: "Lucida Sans";
+    @include atMedium {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
     &--footer {
       color: #fff;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+      @include atMedium {
+        font-size: 1.8rem;
+      }
     }
   }
 
   .btn {
-    background-color: transparent;
-    color: $color-secondary;
+    background-color: $color-secondary;
+    color: #fff;
+
     font-family: $font-display;
     text-transform: capitalize;
     padding: 1.8rem 3rem;
@@ -52,12 +72,15 @@ body {
     box-shadow: inset 0 3px 3px rgba(#000000, 0.1);
 
     &:hover {
-      background-color: $color-secondary;
-      color: #fff;
+      background-color: transparent;
+      color: $color-secondary;
     }
 
     &--large {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
+      @include atMedium {
+        font-size: 2.2rem;
+      }
     }
   }
 

@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <HelpBar text="Te gustaria obtener una cotizacion?" />
       <Features />
-      <HelpBar text="Tienes dudas? Contactanos..." />
+      <HelpBar text="Contactanos" />
       <Footer />
     </div>
   );

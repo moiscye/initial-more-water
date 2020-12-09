@@ -1,20 +1,23 @@
 .help-bar {
   grid-column: full-start / full-end;
-  padding: 7rem;
+  padding: 4rem 3rem;
   background-color: $color-green-light-1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  align-content: center;
   cursor: pointer;
-
-  &__text {
-    grid-column: 3/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include atMedium {
+    padding: 7rem;
   }
 
   &__arrow-f {
-    grid-column: 8/9;
-    width: 5rem;
-    height: 5rem;
-    align-self: center;
+    margin-left: 1rem;
+    width: 10rem;
+    height: 10rem;
+    @include atMedium {
+      width: 5rem;
+      height: 5rem;
+      margin-left: 10rem;
+    }
   }
 }

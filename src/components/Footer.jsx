@@ -1,32 +1,37 @@
 import React from "react";
+import smoothScroll from "../utils/smoothScroll";
 import { ReactComponent as FacebookSvg } from "../img/SVG/facebook.svg";
 import { ReactComponent as TwitterSvg } from "../img/SVG/twitter.svg";
 import { ReactComponent as InstagramSvg } from "../img/SVG/instagram.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id="contacto" className="footer">
       <div className="footer--left ">
         <h3 className="heading-secondary heading-secondary--footer mb-md">
           Mapa del Sitio
         </h3>
 
         <p className="footer-navigation">
-          <a className="footer-navigation__link" href="/">
+          <button
+            onClick={() => smoothScroll("inicio")}
+            className="footer-navigation__link"
+          >
             Inicio
-          </a>
-          <a className="footer-navigation__link" href="/">
+          </button>
+          <button
+            onClick={() => smoothScroll("nosotros")}
+            className="footer-navigation__link"
+          >
             Nosotros
-          </a>
-          <a className="footer-navigation__link" href="/">
-            Cotizaciones
-          </a>
-          <a className="footer-navigation__link" href="/">
-            Galeria
-          </a>
-          <a className="footer-navigation__link" href="/">
+          </button>
+
+          <button
+            onClick={() => smoothScroll("contacto")}
+            className="footer-navigation__link"
+          >
             Contacto
-          </a>
+          </button>
         </p>
       </div>
 

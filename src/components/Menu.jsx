@@ -1,42 +1,75 @@
-import React from "react";
-import logo from "../img/logo_transparent.png";
+import React, { useState } from "react";
+import smoothScroll from "../utils/smoothScroll";
+import classNames from "classnames";
+import { ReactComponent as Drop } from "../img/SVG/droplet.svg";
 
+import { ReactComponent as MenuSvg } from "../img/SVG/menu.svg";
 const Menu = () => {
+  const [isToggleOn, setIsToggleOn] = useState(false);
+
+  const toggleCollapsible = (show) => {
+    if (show && isToggleOn) {
+      setIsToggleOn(!show);
+    } else {
+      setIsToggleOn(show);
+    }
+  };
+
   const user = () => (
     <div className="user">
-      <img className="user__logo" src={logo} alt="Logo Angelopolis" />
+      <Drop className="user__logo" />
+      <h3 className="user__heading">
+        <span className="user__heading-span">A</span>ngelopolis
+      </h3>
     </div>
   );
   return (
-    <div className="menu">
+    <div id="inicio" className="menu">
       {user()}
-      <ul className="navigation">
+      <button
+        onClick={() => {
+          toggleCollapsible(true);
+        }}
+        onBlur={() => {
+          toggleCollapsible(false);
+        }}
+        className="menu__burguer-btn"
+      >
+        <MenuSvg />
+      </button>
+
+      <div
+        className={
+          isToggleOn
+            ? classNames("navigation", "navigation--toggle")
+            : "navigation"
+        }
+      >
         <li className="navigation__item">
-          <a href="/" className="navigation__link">
+          <button
+            onClick={() => smoothScroll("inicio")}
+            className="navigation__link"
+          >
             Inicio
-          </a>
+          </button>
         </li>
         <li className="navigation__item">
-          <a href="/" className="navigation__link">
+          <button
+            onClick={() => smoothScroll("nosotros")}
+            className="navigation__link"
+          >
             Nosotros
-          </a>
+          </button>
         </li>
         <li className="navigation__item">
-          <a href="/" className="navigation__link">
-            Cotizaciones
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="/" className="navigation__link">
-            Galeria
-          </a>
-        </li>
-        <li className="navigation__item">
-          <a href="/" className="navigation__link">
+          <button
+            onClick={() => smoothScroll("contacto")}
+            className="navigation__link"
+          >
             Contacto
-          </a>
+          </button>
         </li>
-      </ul>
+      </div>
     </div>
   );
 };

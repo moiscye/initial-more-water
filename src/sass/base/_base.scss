@@ -22,13 +22,19 @@ $font-display: "Gravur Condensed", "Flama Light", "Segoe UI", "Roboto", "Oxygen"
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 60vh 20vh min-content 20vh;
+  grid-template-rows: 6rem;
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
     [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @include atMedium {
+    grid-template-rows: 1fr 60vh 20vh min-content 20vh;
+    //grid-template-rows: 6rem;
+  }
 }

@@ -46,10 +46,8 @@ const featureList = [
 
 const Features = () => {
   return (
-    <div className="features">
-      <h1 className="features__heading heading-primary">
-        Lo que nos distingue:
-      </h1>
+    <div id="nosotros" className="features">
+      <h1 className="features__heading">Lo que nos distingue:</h1>
       <div className="features__grid">
         {featureList.map(({ title, description, logo }, id) => (
           <div className="features__cell" key={id}>
