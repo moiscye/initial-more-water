@@ -62,7 +62,6 @@ body {
   .btn {
     background-color: $color-secondary;
     color: #fff;
-
     font-family: $font-display;
     text-transform: capitalize;
     padding: 1.8rem 3rem;
@@ -74,6 +73,14 @@ body {
     &:hover {
       background-color: transparent;
       color: $color-secondary;
+    }
+
+    &--md {
+      font-size: 1.8rem;
+      @include atMedium {
+        font-size: 1.8rem;
+        padding: 1.2rem 2rem;
+      }
     }
 
     &--large {

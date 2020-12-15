@@ -36,13 +36,12 @@
   &__logo {
     width: 4rem;
     height: 4rem;
-    fill: $color-green-light-1;
+    fill: $color-blue-dark-1;
     margin-right: 0.5rem;
 
     @include atMedium {
       width: 5rem;
       height: 5rem;
-      fill: $color-green-light-1;
       margin-right: 2rem;
     }
   }
@@ -59,7 +58,7 @@
   &__heading-span {
     font-size: 4.5rem;
     font-family: cursive;
-    color: $color-green-light-1;
+    color: $color-blue-dark-1;
     @include atMedium {
       font-size: 5.5rem;
     }

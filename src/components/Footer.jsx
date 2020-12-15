@@ -76,9 +76,9 @@ const Footer = () => {
         <div className="footer--right__text-container mb-md">
           <p className="text-primary text-primary--footer">
             Somos una empresa especializada en el trasporte de Agua así como en
-            el lavado de cisternas. que busca brindar a nuestros clientes un
-            servicio de excelencia ofreciendo agua de alta calidad a sus
-            clientes o familiares.
+            el lavado de cisternas. Estamos dedicados a brindar a nuestros
+            clientes un servicio de excelencia ofreciendo agua de alta calidad
+            para su empresa u hogar.
           </p>
         </div>
 

@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     color: $color-secondary;
-    border: 1px solid $color-green-light-1;
+    border: 1px solid $color-blue-light-1;
     margin: 0.5rem 0.5rem;
     border-radius: 3px;
 
@@ -55,7 +55,7 @@
   &__icon {
     height: 4.5rem;
     width: 4.5rem;
-    fill: $color-green-light-1;
+    fill: $color-blue-dark-1;
     grid-column: 1/2;
     align-self: center;
     margin-right: 2rem;
