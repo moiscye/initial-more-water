@@ -4,7 +4,7 @@
   flex-direction: column-reverse;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: $color-blue-light-1;
+  background-color: transparent;
 
   @include atMedium {
     flex-direction: row-reverse;
@@ -17,7 +17,7 @@
     width: 100%;
 
     margin-right: 3rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     @include atMedium {
       border-radius: 5px;
       margin-bottom: 3rem;
