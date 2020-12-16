@@ -55,11 +55,10 @@
   &__icon {
     height: 4.5rem;
     width: 4.5rem;
-    fill: $color-blue-dark-1;
+    fill: $color-green-light-1;
     grid-column: 1/2;
     align-self: center;
     margin-right: 2rem;
-    //justify-self: center;
     @include atMedium {
       grid-column: 1/2;
       grid-row: 1/-1;

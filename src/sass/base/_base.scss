@@ -33,9 +33,7 @@ html {
     [full-start] minmax(6rem, 1fr)
     [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
-
   @include atMedium {
     grid-template-rows: 1fr 60vh 20vh min-content;
-    //grid-template-rows: 6rem;
   }
 }

@@ -63,6 +63,22 @@ const Menu = () => {
         </li>
         <li className="navigation__item">
           <button
+            onClick={() => smoothScroll("services")}
+            className="navigation__link"
+          >
+            Servicios
+          </button>
+        </li>
+        <li className="navigation__item">
+          <button
+            onClick={() => smoothScroll("gallery")}
+            className="navigation__link"
+          >
+            Galeria
+          </button>
+        </li>
+        <li className="navigation__item">
+          <button
             onClick={() => smoothScroll("contacto")}
             className="navigation__link"
           >

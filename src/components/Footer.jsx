@@ -6,7 +6,7 @@ import { ReactComponent as InstagramSvg } from "../img/SVG/instagram.svg";
 
 const Footer = () => {
   return (
-    <footer id="contacto" className="footer">
+    <footer id="footer" className="footer">
       <div className="footer--left ">
         <h3 className="heading-secondary heading-secondary--footer mb-md">
           Mapa del Sitio
@@ -24,6 +24,18 @@ const Footer = () => {
             className="footer-navigation__link"
           >
             Nosotros
+          </button>
+          <button
+            onClick={() => smoothScroll("services")}
+            className="footer-navigation__link"
+          >
+            Servicios
+          </button>
+          <button
+            onClick={() => smoothScroll("gallery")}
+            className="footer-navigation__link"
+          >
+            Galeria
           </button>
 
           <button

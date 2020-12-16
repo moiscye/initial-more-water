@@ -1,5 +1,5 @@
 import React from "react";
-
+import smoothScroll from "../utils/smoothScroll";
 import image1 from "../img/pipa-logo-2.png";
 const Header = () => {
   return (
@@ -11,9 +11,12 @@ const Header = () => {
           </h1>
           <h3 className="header__text text-primary">
             En <strong>Angelopolis</strong> contamos con agua de la mejor
-            calidad, servicio inigualable y precio que ayuda a tu economia.
+            calidad, servicio inigualable y precio que ayuda a su economia.
           </h3>
-          <button className="btn btn--large header__btn">
+          <button
+            className="btn btn--large header__btn"
+            onClick={() => smoothScroll("contacto")}
+          >
             Ordena tu pipa aqui
           </button>
         </div>
